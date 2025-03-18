@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Responsiveness_Display</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 20px;
+        }
+        .responsiveness {
+            border: 2px solid yellow;
+            padding: 20px;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+        }
+        .responsiveness2 {
+            border: 2px solid yellow;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+        }
+         /* using display-block  */
+         @media screen and (min-width: 480px) {
+            .responsiveness {
+                background-color: lightgreen;
+                width: 50%;
+            }
+        }
+        @media screen and (min-width: 480px) {
+            .responsiveness2 {
+                display: inline-block;
+                background-color: rgb(203, 149, 32);
+                width:20%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  
+ 
+    <!-- using display  -->
+    <div class="container">
+        <div class="responsiveness">PNY </div>
+        <div class="responsiveness2">Training </div>
+        <div class="responsiveness2">Institute </div>
+
+    </div>
+</body>
+
+</html>

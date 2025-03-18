@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Mul_media_tag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .container_plus {
+            margin: 2px;
+        }
+
+        .responsiveness {
+            border: 2px solid yellow;
+            padding: 20px;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            overflow:hidden;
+        }
+
+        .responsiveness2 {
+            border: 2px solid yellow;
+            padding: 20px;
+            margin: auto;
+            width: 49%;
+            text-align: center;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        /* using display-block  */
+        @media (min-width: 520px) and (max-width: 768px) {
+            .responsiveness {
+                background-color: lightgreen;
+                width: 40%;
+            }
+
+            .container_plus {
+                display: inline;
+            }
+
+            .responsiveness2 {
+                background-color: rgb(111, 58, 36);
+                width: 22%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- using display  -->
+    <div class="container">
+        <div class="responsiveness">PNY </div>
+        <div class="container_plus">
+            <div class="responsiveness2">Training </div>
+            <div class="responsiveness2">Institute </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
