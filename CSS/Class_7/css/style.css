@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container {
+    /* border: 2px solid red; */
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    background: #ebc4c4;
+}
+.eigthy_percent{
+    width: 80%;
+    margin: auto;
+}
+
+.icon_bar {
+    display: flex;
+    border: 2px solid yellow;
+    /* width: 80%; */
+    /* margin: auto; */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 3px;
+}
+
+.icon_bar .searchbar {
+    float: left;
+    width: 50%;
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+.icon_bar .social_icon {
+    float: right;
+    width: 50%;
+    border: 2px solid gray;
+    padding: 20px;
+}
+.icon_bar .social_icon span{
+    /* width: 50%; */
+    margin: 2px;
+    border: 2px solid gray;
+    padding: 6px;
+}
+
+.location_container {
+    display: flex;
+    border: 2px solid yellow;
+    /* width: 80%;
+    margin: auto; */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 3px;
+}
+
+.location_container .logo {
+    width: 50%;
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+.location_container .location {
+    width: 50%;
+    border: 2px solid gray;
+    padding: 20px;
+}
+.navbar {
+    /* width: 80%; */
+    border: 2px solid yellow;
+    /* margin: auto; */
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar li {
+    list-style: none;
+    float: left;
+    padding: 20px;
+
+
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+.main_area {
+    display: flex;
+    border: 2px solid yellow;
+    /* width: 80%;
+    margin: auto; */
+    text-align: center;
+    padding: 20px;
+    height: 250px;
+    margin-bottom: 3px;
+}
+
+.about_services {
+    display: flex;
+    border: 2px solid yellow;
+    /* width: 80%;
+    margin: auto; */
+    text-align: center;
+    padding: 20px;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.about_services .service {
+    border: 2px solid goldenrod;
+    float: left;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.about_services .service span {
+    display: block;
+    border: 1px solid red;
+    margin: 3px;
+    padding: 2px;
+}
+
+.scroll_area {
+    display: flex;
+    border: 2px solid yellow;
+    /* width: 80%;
+    margin: auto; */
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    margin-bottom: 3px;
+}
+
+.scroll_area .logo {
+    width: 50%;
+    border: 2px solid gray;
+    margin: auto;
+    padding: 20px;
+    height: 150px;
+}
+
+.scroll_area .location {
+    width: 50%;
+    border: 2px solid gray;
+    margin: auto;
+    padding: 20px;
+    height: 150px;
+}
+
+.footer {
+    display: flex;
+    border: 2px solid yellow;
+    /* width: 80%;
+    margin: auto; */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 3px;
+}
