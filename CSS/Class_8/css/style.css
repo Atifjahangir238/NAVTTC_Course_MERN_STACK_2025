@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    border: 2px solid;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(31 41 55);
+}
+
+.bootcamps {
+    background-color: rgb(255 186 74);
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-flex;
+    padding: 3px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255 255 255);
+    cursor: pointer;
+}
+
+.enroll_now {
+    background: red;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+
+}

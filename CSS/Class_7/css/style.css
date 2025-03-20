@@ -11,100 +11,103 @@
     overflow: hidden;
     background: #ebc4c4;
 }
-.eigthy_percent{
+
+.eigthy_percent {
     width: 80%;
     margin: auto;
+    overflow: auto;
+
 }
 
 .icon_bar {
-    display: flex;
     border: 2px solid yellow;
-    /* width: 80%; */
-    /* margin: auto; */
     text-align: center;
     padding: 20px;
     margin-bottom: 3px;
+    overflow: hidden;
 }
 
-.icon_bar .searchbar {
+.icon_bar .address {
     float: left;
-    width: 50%;
     border: 2px solid gray;
     padding: 20px;
 }
 
 .icon_bar .social_icon {
     float: right;
-    width: 50%;
     border: 2px solid gray;
     padding: 20px;
 }
-.icon_bar .social_icon span{
-    /* width: 50%; */
+
+.icon_bar .social_icon span {
     margin: 2px;
     border: 2px solid gray;
     padding: 6px;
 }
 
 .location_container {
-    display: flex;
     border: 2px solid yellow;
-    /* width: 80%;
-    margin: auto; */
     text-align: center;
     padding: 20px;
     margin-bottom: 3px;
+    overflow: hidden;
 }
 
 .location_container .logo {
-    width: 50%;
+
+    float: left;
     border: 2px solid gray;
     padding: 20px;
 }
 
 .location_container .location {
-    width: 50%;
+    float: right;
     border: 2px solid gray;
     padding: 20px;
 }
-.navbar {
-    /* width: 80%; */
+
+
+/* .navbar {
     border: 2px solid yellow;
-    /* margin: auto; */
     overflow: hidden;
-    text-align: center;
 }
 
 .navbar li {
     list-style: none;
     float: left;
     padding: 20px;
-
-
+} */
+.navbar {
+    border: 2px solid yellow;
+    text-align: center;
+    padding: 0;
 }
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
 
 .navbar li a {
     text-decoration: none;
 }
+
 .main_area {
-    display: flex;
     border: 2px solid yellow;
-    /* width: 80%;
-    margin: auto; */
     text-align: center;
     padding: 20px;
-    height: 250px;
+    height: auto;
     margin-bottom: 3px;
 }
 
 .about_services {
     display: flex;
     border: 2px solid yellow;
-    /* width: 80%;
-    margin: auto; */
     text-align: center;
     padding: 20px;
-    height: 180px;
+    height: auto;
     overflow: hidden;
     margin-bottom: 3px;
 }
@@ -126,37 +129,32 @@
 }
 
 .scroll_area {
-    display: flex;
     border: 2px solid yellow;
-    /* width: 80%;
-    margin: auto; */
     text-align: center;
     padding: 20px;
-    height: 200px;
+    height: auto;
     margin-bottom: 3px;
+    overflow: hidden;
 }
 
-.scroll_area .logo {
-    width: 50%;
+.scroll_area .box1 {
+    width: 49%;
+    float: left;
     border: 2px solid gray;
     margin: auto;
     padding: 20px;
-    height: 150px;
 }
 
-.scroll_area .location {
-    width: 50%;
+.scroll_area .box2 {
+    width: 49%;
+    float: right;
     border: 2px solid gray;
     margin: auto;
     padding: 20px;
-    height: 150px;
 }
 
 .footer {
-    display: flex;
     border: 2px solid yellow;
-    /* width: 80%;
-    margin: auto; */
     text-align: center;
     padding: 20px;
     margin-bottom: 3px;
