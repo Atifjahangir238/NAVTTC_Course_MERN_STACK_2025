@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center a Div</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            background: blanchedalmond;
+            /* important*/
+            display: flex;
+            height: 95vh;
+            border: 2px solid red;
+            /* important*/
+            justify-content: center;
+            /* important*/
+            align-items: center;
+        }
+
+        .flex-container>h3 {
+            border: 2px solid red;
+            background: #36768d;
+            padding: 30px;
+        }
+
+        p {
+            color: red;
+            font-size: bold;
+            text-align: center;
+            background: yellow;
+            padding: 3px;
+            height: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <h3>Raja Atif</h3>
+    </div>
+    <p>According to Height and Width my content will center</p>
+</body>
+
+</html>
