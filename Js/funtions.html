@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtions</title>
+</head>
+
+<body>
+    <input id="TableOfTwo" value="12"></input> <br>
+    <input id="TableOfThree" value="2"></input> <br>
+    <input id="ans" value=""></input> <br>
+    <button id="multiplicationTable"> click to calculate</button>
+
+
+    <script>
+
+        function AllEmployee() {
+            const objects = {};
+            objects["Fname"] = document.getElementById("TableOfTwo").value;
+            objects["Lname"] = document.getElementById("TableOfThree").value;
+            console.log("Employees", objects)
+            return objects;
+
+        }
+        multiplicationTabl= document.getElementById("multiplicationTable");
+        multiplicationTabl.onclick = function () {
+            emoployees = AllEmployee();
+            ans = emoployees.Fname * emoployees.Lname;
+            document.getElementById("ans").value = ans;
+        };
+        // function addition(a,b){
+        //     return a+b;
+        // }
+        // let text = "<h1>atif</h1>"
+        // let additions= addition(2,6); // return 8
+        // // let additions= addition(); // return NaN
+        // // let additions= addition; // return below
+        // //  function addition(a,b){
+        // //     return a+b;
+        // // }
+        // const additionsMethod= document.getElementById('calculation');
+        // // innerText return string like this <h1>atif</h1> and with innerHTML return atif
+        // // additionsMethod.innerText=text;
+        // additionsMethod.innerHTML=additions;
+
+        // for (let i = 1; i <= 10; i++) {
+        //     document.getElementById("TableOfTwo").innerHTML += "2"+"*" +i +"="+ i*2 + "<br>";
+        //     document.getElementById("TableOfThree").innerHTML += "3"+"*" +i +"="+ i*3 + "<br>";
+        // }
+        // let output = "";
+
+        // for (let i = 2; i <= 10; i++) {
+        //   for(let j=1; j<=10;j++){
+        //     output +=i+"X"+ j+"="+ i*j +"<br>";
+        //   }
+        //     output += "<br>"; // Add a blank line between each set
+        // }
+
+    </script>
+</body>
+
+</html>

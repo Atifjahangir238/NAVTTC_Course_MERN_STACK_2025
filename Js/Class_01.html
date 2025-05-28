@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.center{
+    display: flex;
+    justify-content: center;
+    background: cadetblue;
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <p>Enter 1 for Voltage Output</p>
+    <p>Enter 2 for Current Output</p>
+    <p>Enter 3 for Weight Output</p>
+    <p>Enter 4 for Energy Output</p>
+    <div class="center">
+        <h3 id="voltage"></h3>
+        <h3 id="currentElectricity"></h3>
+        <h3 id="W"></h3>
+        <h3 id="E"></h3>
+        <h3 id="wrong"></h3>
+    </div>
+
+
+    <script>
+        // task 
+        // v=i*r , i=v/r , w=m*g , e=mc2
+        let voltage, resistance, current, currentElectricity, v, r, m, w, g, e, mass, c;
+        resistance = 5;
+        current = 5;
+        v = 48;
+        r = 6;
+        m = 3;
+        g = 6;
+        mass = 9;
+        c = 3;
+        // e=mc2
+        e = mass * c ** 2;
+        // w=m*g 
+        w = m * g;
+        // v=i*r 
+        voltage = current * resistance;
+        // i=v/r 
+        currentElectricity = v / r;
+        let myChoice = 3;
+        switch (myChoice) {
+            case 1:
+                document.getElementById("voltage").innerHTML = "Voltage = " + voltage;
+                break;
+            case 2:
+                document.getElementById("currentElectricity").innerHTML = "Current = " + currentElectricity;
+                break;
+            case 3:
+                document.getElementById("W").innerHTML = "Weight = " + w;
+                break;
+            case 4:
+                document.getElementById("E").innerHTML = "Energy = " + e;
+                break;
+            default:
+                document.getElementById("wrong").innerHTML = "You enter a wrong details";
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <div id="addition"></div>
+    <script>
+        class Calculator {
+            constructor(Value1, Value2) {
+                this.Value1 = Value1;
+                this.Value2 = Value2;
+            }
+            addition() {
+                let res = this.Value1 + this.Value2;
+                return res;
+            }
+            substraction() {
+                let res = this.Value1 - this.Value2;
+                return res;
+            }
+        }
+        const addition1 = new Calculator(3, 2);
+        document.getElementById("addition").innerHTML = addition1.substraction();
+    </script>
+
+</body>
+
+</html>

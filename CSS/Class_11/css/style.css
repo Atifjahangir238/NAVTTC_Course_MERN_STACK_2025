@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    border: 2px solid;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(31 41 55);
+    border-bottom: 3px solid rgb(179, 219, 235);
+}
+
+.bootcamps {
+    background-color: rgb(255 186 74);
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-flex;
+    padding: 3px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255 255 255);
+    cursor: pointer;
+}
+
+.enroll_now {
+    background: red;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.pny-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(44, 55, 70);
+    color: white;
+}
+
+.pny-info ul {
+    display: flex;
+    width: 70%;
+    border: 2px solid;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    border: none;
+}
+
+.pny-info ul li a {
+    text-decoration: none;
+}
+
+.search_pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px;
+    padding: 1px;
+    overflow: hidden;
+
+}
+
+.search_pages .left,
+.search_pages .right {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.search_pages .left span{
+    padding: 5px;
+}
+.search_pages .left span input{
+    width: 30em;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid gray;
+
+}
+.search_pages .left span button{
+background: blue; 
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: none;
+}
+.search_pages .right{
+    display: flex;
+}
+.search_pages .right ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.search_pages .right ul li{
+padding: 10px;
+}
+.search_pages .right ul li a{ 
+    text-decoration: none;
+}
+.banner img{
+    width: 100%;
+}
+.no-1{
+    text-align: center;
+    padding: 20px;
+}
+.no-1 h1,h3{
+padding: 10px;
+}
+
+.join-us {
+    background: cadetblue;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center;
+    margin-bottom: 20px;
+    flex-direction: column; /* Stack items vertically */
+    overflow: hidden;
+}
+.join-us span{
+    width: 40%;
+}
+.join-us span h1 , button{
+  margin: 20px;
+  
+}
+.join-us span  button{
+cursor: pointer;
+background: blue;
+border: none;
+border-radius: 10px;
+padding: 20px 50px;
+color: white;
+}
+
+.potisition-fixed i{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    cursor: pointer;
+    color: green;
+    font-size: 70px;
+}
+.about-institue{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.d-block-inline {
+    width: 25%;
+   
+}
+.d-block-inline i{
+    display: block;
+    font-size: 30px;
+    padding: 30px;
+    color: rgb(68, 68, 249);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <!-- <div id="oop"></div>
+    <form onsubmit="submit">
+        <input type="text" id="name" placeholder="name">
+        <input type="email" id="email" placeholder="email">
+        <button id="sub">Submit</button>
+    </form>
+    <script>
+        class facebook {
+            constructor(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+            displayUser = () => {
+                const obj = {};
+                obj['name'] = document.getElementById("name").value;
+                obj['email'] = document.getElementById("email").value;
+                return obj;
+            }
+        }
+        const user = new facebook();
+        const response = document.getElementById("sub");
+
+        response.onclick = () => {
+            event.preventDefault();
+        }
+    </script> -->
+
+    <div id="oop"></div>
+
+    <form id="userForm">
+        <input type="text" id="name" placeholder="name" />
+        <input type="email" id="email" placeholder="email" />
+        <button type="submit" id="sub">Submit</button>
+    </form>
+
+    <script>
+        class Facebook {
+            constructor() {
+                this.name = "";
+                this.email = "";
+            }
+
+            getUserInput() {
+                this.name = document.getElementById("name").value;
+                this.email = document.getElementById("email").value;
+                console.log("Name:",this.name);
+                console.log("Name:",this.email);
+            }
+
+            clearForm() {
+                document.getElementById("name").value="";
+                document.getElementById("email").value="";
+            }
+        }
+
+        const user = new Facebook();
+
+        document.getElementById("userForm").addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            user.getUserInput();  
+            user.clearForm();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <div id="SalarySlip"></div>
+    <script>
+
+        const employeeDetails = [{ name: "Atif", Department: "Developer", Designation: "React js developer", BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0, NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 2180, Detections: 2160, NetSalary: 56640 },
+        { name: "Aqib", Department: "Developer", Designation: "React js developer", BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0, NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 2180, Detections: 2160, NetSalary: 56640 }]
+        
+
+        employeeDetails.GrossSalary=employeeDetails.Allowance+employeeDetails.BasicSalary+employeeDetails.Commission;
+        employeeDetails.PerDaySalary=Math.floor(employeeDetails.GrossSalary/employeeDetails.NoOfWorkingDays);
+        employeeDetails.Detections=Math.floor(employeeDetails.Leave*employeeDetails.PerDaySalary);
+        employeeDetails.NetSalary=employeeDetails.GrossSalary-employeeDetails.Detections;
+
+        console.log("employeeDetails.Allowance",employeeDetails.Allowance)
+
+  
+let htmlContent = "<h3>Salary Slip</h3><table border='1' cellspacing='0' cellpadding='8'>";
+htmlContent += "<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>";
+
+for (let key in employeeDetails) {
+  htmlContent += `<tr><td><strong>${key}</strong></td><td>${employeeDetails[key]}</td></tr>`;
+}
+
+htmlContent += "</tbody></table>";
+
+document.getElementById("SalarySlip").innerHTML = htmlContent; -->
+
+    <!-- <div id="SalarySlip"></div>
+
+<script>
+    const employeeDetails = [
+        {
+            name: "Atif", Department: "Developer", Designation: "React js developer",
+            BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0,
+            NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 0, Detections: 0, NetSalary: 0
+        },
+        {
+            name: "Aqib", Department: "Developer", Designation: "React js developer",
+            BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0,
+            NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 0, Detections: 0, NetSalary: 0
+        }
+    ];
+
+    // Calculate salary details for each employee
+    employeeDetails.forEach(emp => {
+        emp.GrossSalary = emp.BasicSalary + emp.Commission + emp.Allowane;
+        emp.PerDaySalary = Math.floor(emp.GrossSalary / emp.NoOfWorkingDays);
+        emp.Detections = Math.floor(emp.Leave * emp.PerDaySalary);
+        emp.NetSalary = emp.GrossSalary - emp.Detections;
+    });
+
+    // Build HTML to display all salary slips
+    let htmlContent = "<h3>Salary Slips</h3>";
+
+    employeeDetails.forEach((emp, index) => {
+        htmlContent += `<h4>Employee ${index + 1}: ${emp.name}</h4>`;
+        htmlContent += "<table border='1' cellspacing='0' cellpadding='8'>";
+        htmlContent += "<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>";
+
+        for (let key in emp) {
+            htmlContent += `<tr><td><strong>${key}</strong></td><td>${emp[key]}</td></tr>`;
+        }
+
+        htmlContent += "</tbody></table><br>";
+    });
+
+    document.getElementById("SalarySlip").innerHTML = htmlContent; -->
+    <!-- <div id="SalarySlip"></div>
+
+<script>
+    const employeeDetails = [
+        {
+            name: "Atif", Department: "Developer", Designation: "React js developer",
+            BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0,
+            NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 0, Detections: 0, NetSalary: 0, remarks:"Present"
+        },
+        {
+            name: "Aqib", Department: "Developer", Designation: "React js developer",
+            BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0,
+            NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 0, Detections: 0, NetSalary: 0
+        },
+        {
+            name: "Aqib", Department: "Developer",
+            BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0,
+            NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 0, Detections: 0, NetSalary: 0
+        }
+    ];
+
+    // Calculate salary details for each employee
+    employeeDetails.forEach(emp => {
+        emp.GrossSalary = emp.BasicSalary + emp.Commission + emp.Allowane;
+        emp.PerDaySalary = Math.floor(emp.GrossSalary / emp.NoOfWorkingDays);
+        emp.Detections = Math.floor(emp.Leave * emp.PerDaySalary);
+        emp.NetSalary = emp.GrossSalary - emp.Detections;
+    });
+
+    // Create table header from keys of the first employee
+    let htmlContent = "<h3>Salary Slip</h3><table border='1' cellspacing='0' cellpadding='8'>";
+    htmlContent += "<thead><tr>";
+
+    const keys = Object.keys(employeeDetails[0]);
+    keys.forEach(key => {
+        htmlContent += `<th>${key}</th>`;
+    });
+    htmlContent += "</tr></thead><tbody>";
+
+    // Create rows for each employee
+    employeeDetails.forEach(emp => {
+        htmlContent += "<tr>";
+        keys.forEach(key => {
+            htmlContent += `<td>${(emp[key] == null || Number.isNaN(emp[key])) ? "---" : emp[key]}</td>`;
+
+        });
+        htmlContent += "</tr>";
+    });
+
+    htmlContent += "</tbody></table>";
+
+    document.getElementById("SalarySlip").innerHTML = htmlContent; -->
+
+    <!-- <div id="SalarySlip"></div> -->
+    <form action="">
+
+        <input type="text" value="" name="" id="name" placeholder="name">
+        <input type="text" value="" name="" id="Department" placeholder="Department">
+        <input type="text" value="" name="" id="Designation" placeholder="Designation">
+        <input type="text" value="" name="" id="BasicSalary" placeholder="BasicSalary">
+        <input type="text" value="" name="" id="Commission" placeholder="Commission">
+        <input type="text" value="" name="" id="Allowane" placeholder="Allowane">
+        <input type="text" value="" name="" id="GrossSalary" placeholder="GrossSalary">
+        <input type="text" value="" name="" id="NoOfWorkingDays" placeholder="NoOfWorkingDays">
+        <input type="text" value="" name="" id="Leave" placeholder="Leave">
+        <input type="text" value="" name="" id="PerDaySalary" placeholder="PerDaySalary">
+        <input type="text" value="" name="" id="Detections" placeholder="Detections">
+        <input type="text" value="" name="" id="NetSalary" placeholder="NetSalary">
+        <input type="text" value="" name="" id="remarks" placeholder="remarks">
+        <!-- <input type="text" value="" name="" id="output" placeholder="output"> -->
+
+        <!-- <button id="addUser">Add Employee</button> -->
+    <!-- </form> -->
+    <div id="SalarySlip"></div>
+
+    <form id="employeeForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="Department" placeholder="Department" required>
+        <input type="text" id="Designation" placeholder="Designation" required>
+        <input type="number" id="BasicSalary" placeholder="Basic Salary" required>
+        <input type="number" id="Commission" placeholder="Commission" required>
+        <input type="number" id="Allowane" placeholder="Allowance" required>
+        <input type="number" id="NoOfWorkingDays" placeholder="No. of Working Days" required>
+        <input type="number" id="Leave" placeholder="Leave" required>
+        <input type="text" id="remarks" placeholder="Remarks">
+        <button id="addUser">Add Employee</button>
+    </form>
+    <script>
+   let allEmployees = [];
+
+function employeeForm() {
+    const employee = {
+        name: document.getElementById("name").value,
+        Department: document.getElementById("Department").value,
+        Designation: document.getElementById("Designation").value,
+        BasicSalary: parseFloat(document.getElementById("BasicSalary").value),
+        Commission: parseFloat(document.getElementById("Commission").value),
+        Allowane: parseFloat(document.getElementById("Allowane").value),
+        NoOfWorkingDays: parseInt(document.getElementById("NoOfWorkingDays").value),
+        Leave: parseInt(document.getElementById("Leave").value),
+        remarks: document.getElementById("remarks").value,
+    };
+
+    // Salary Calculations
+    employee.GrossSalary = employee.BasicSalary + employee.Commission + employee.Allowane;
+    employee.PerDaySalary = Math.floor(employee.GrossSalary / employee.NoOfWorkingDays);
+    employee.Detections = Math.floor(employee.Leave * employee.PerDaySalary);
+    employee.NetSalary = employee.GrossSalary - employee.Detections;
+
+    return employee;
+}
+
+function displayEmployees(employees) {
+    if (employees.length === 0) return;
+
+    const headers = Object.keys(employees[0]);
+    const formatValue = (value) => (value == null || Number.isNaN(value) ? "---" : value);
+
+    const rows = employees.map(emp =>
+        `<tr>${headers.map(key => `<td>${formatValue(emp[key])}</td>`).join('')}</tr>`
+    ).join('');
+
+    const htmlContent = `
+        <h3>Salary Slip</h3>
+        <table border="1" cellspacing="0" cellpadding="8">
+            <thead><tr>${headers.map(key => `<th>${key}</th>`).join('')}</tr></thead>
+            <tbody>${rows}</tbody>
+        </table>
+    `;
+
+    document.getElementById("SalarySlip").innerHTML = htmlContent;
+}
+
+document.getElementById("addUser").onclick = function (event) {
+    event.preventDefault();
+
+    const newEmp = employeeForm();
+    allEmployees.push(newEmp);
+    displayEmployees(allEmployees);
+
+    // Optional: Reset form after submission
+    document.getElementById("employeeForm").reset();
+};
+
+
+        // function employeeForm() {
+        //     let emp = [];
+        //     let employeeDetails = {};
+        //     employeeDetails["name"] = document.getElementById("name").value;
+        //     employeeDetails["Department"] = document.getElementById("Department").value;
+        //     employeeDetails["Designation"] = document.getElementById("Designation").value;
+        //     employeeDetails["BasicSalary"] = document.getElementById("BasicSalary").value;
+        //     employeeDetails["Commission"] = document.getElementById("Commission").value;
+        //     employeeDetails["Allowane"] = document.getElementById("Allowane").value;
+        //     employeeDetails["GrossSalary"] = document.getElementById("GrossSalary").value;
+        //     employeeDetails["NoOfWorkingDays"] = document.getElementById("NoOfWorkingDays").value;
+        //     employeeDetails["Leave"] = document.getElementById("Leave").value;
+        //     employeeDetails["PerDaySalary"] = document.getElementById("PerDaySalary").value;
+        //     employeeDetails["Detections"] = document.getElementById("Detections").value;
+        //     employeeDetails["NetSalary"] = document.getElementById("NetSalary").value;
+        //     employeeDetails["remarks"] = document.getElementById("remarks").value;
+        //     emp.push(employeeDetails);
+        //     console.log("employeeDetails", emp);
+        //     // console.log(employeeDetails);
+        //     return emp;
+
+        // }
+        // const allEmployeess = employeeForm();
+        // AddUser = document.getElementById("addUser");
+        // AddUser.onclick = function () {
+        //     event.preventDefault();
+        //    let  user = employeeForm();
+        //    let  FinalUser = user.name;
+        //     // document.getElementById("output").value = FinalUser;
+            
+        // }
+      
+        // // Calculate salary details for each employee
+        // // employeeDetails.forEach(emp => {
+        // allEmployeess.forEach(emp => {
+        //     emp.GrossSalary = parseInt(emp.BasicSalary + emp.Commission + emp.Allowane);
+        //     emp.PerDaySalary = parseInt(Math.floor(emp.GrossSalary / emp.NoOfWorkingDays));
+        //     emp.Detections =parseInt (Math.floor(emp.Leave * emp.PerDaySalary));
+        //     emp.NetSalary = parseInt(emp.GrossSalary - emp.Detections);
+        // });
+        // // Utility to handle missing or NaN values
+        // const formatValue = (value) => (value == null || Number.isNaN(value) ? "---" : value);
+        // // Generate table content
+        // const headers = Object.keys(allEmployeess[0]);
+        // const rows = allEmployeess.map(empl =>
+        //     `<tr>${headers.map(key => `<td>${formatValue(empl[key])}</td>`).join('')}</tr>`
+        // ).join('');
+
+        // const htmlContent = `
+        //     <h3>Salary Slip</h3>
+        //     <table border="1" cellspacing="0" cellpadding="8">
+        //         <thead>
+        //             <tr>${headers.map(key => `<th>${key}</th>`).join('')}</tr>
+        //         </thead>
+        //         <tbody>${rows}</tbody>
+        //     </table>
+        // `;
+
+        // document.getElementById("SalarySlip").innerHTML = htmlContent;
+
+
+        // const employeeDetail = [
+        //     { name: "Atif", Department: "Developer", Designation: "React js developer", BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0, NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 0, Detections: 0, NetSalary: 0, remarks: "Present" },
+        //     { name: "Aqib", Department: "Developer", Designation: "React js developer", BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0, NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 0, Detections: 0, NetSalary: 0 },
+        //     { name: "Aqib", Department: "Developer", BasicSalary: 55000, Commission: 3500, Allowane: 2500, GrossSalary: 0, NoOfWorkingDays: 28, Leave: 2, PerDaySalary: 0, Detections: 0, NetSalary: 0 },
+        // ];
+
+
+        //  document.getElementById("SalarySlip").innerHTML=employeeDetails;
+        //  let htmlContent = "<h3>Salary Slip</h3><table>";
+        //    for (let key in employeeDetails) {
+        //      htmlContent += `<thead><tr><th><strong>${key}:</strong></th></tr><thead> <tbody><tr><td>${employeeDetails[key]}</td></tr></tbody> `;
+        //    }
+        //    htmlContent += "</table>";
+        //    document.getElementById("SalarySlip").innerHTML =htmlContent;  
+
+        //   const htmlContents = `
+        //   <h3>Salary Slip</h3>
+        //   <ul>
+        //     ${Object.entries(employeeDetails).map(
+        //       ([key, value]) => `<li><strong>${key}:</strong> ${value}</li>`
+        //     ).join("")}
+        //   </ul>
+        // `;
+        //  both htmlContent and htmlContents are working same 
+        //    document.getElementById("SalarySlip").innerHTML =htmlContent;    
+
+        //    this below line output like this Hi Atif not like this  <h1>Hi Atif</h1>
+        //    document.getElementById("SalarySlip").innerHTML ="<h1>Hi Atif</h1>";     
+
+        // console.log("employeeDetails", employeeDetail);
+
+    </script>
+</body>
+
+</html>

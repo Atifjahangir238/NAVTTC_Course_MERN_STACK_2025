@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JavaScript</title>
+
+</head>
+
+<body>
+    <!-- <p id="demo"></p>
+    <script>
+        const carsList = {
+            name:"toyota",
+            Toyota: {
+                modal: "01",
+                modal: "02",
+                modal: "03",
+                modal: "04",
+            }
+        };
+        console.log("cars", carsList)
+        let cars = carsList.object.entries((items) => {
+            console.log(items.Toyota.modal);
+            return items.Toyota.modal;
+        })
+        document.getElementById("demo").innerHTML = cars;
+    </script> -->
+    <body>
+        <p id="demo"></p>
+        <script>
+          const carsList = {
+            name: "toyota",
+            Toyota: {
+              models: ["01", "02", "03", "04"] // use an array instead of repeating keys
+            }
+          };
+      
+          console.log("cars", carsList);
+
+          // Access the models array
+          let cars = carsList.Toyota.models.map((model) => {
+            return model;
+          });
+      
+          // Display the array as a string
+          document.getElementById("demo").innerHTML = cars.join(", ");
+        </script>
+      </body>
+      
+
+</body>
+
+</html>
